@@ -1,12 +1,12 @@
 <?php
 return[
     "database" => [
-        "host" =>"localhost",
+        "host" =>"host",
         "port"=>3306,
-        "dbname"=>"manuella",
+        "dbname"=>"dbname",
         "charset" => "utf8mb4",
-        "user" => "root",
-        "password" => "@Luc4R0o!tkiT",
+        "user" => "user",
+        "password" => "password",
     ]
 ];
 
