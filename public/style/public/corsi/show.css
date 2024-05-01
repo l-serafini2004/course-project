@@ -1,0 +1,124 @@
+/* Prezzo */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+
+/* Button */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    padding: 3% 5%;
+    color: black;
+    background-color: lightgray;
+}
+
+.ti{
+    font-size: 40px;
+}
+
+.ds{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.kp{
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.kp a{
+    text-decoration: none;
+}
+
+.crs-dts{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 7fr 3fr;
+}
+
+.descrizione{
+    margin: 3% 5%;
+}
+
+.descrizione p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.descrizione img{
+    width: 70%;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 70%;
+    margin: 20% 0;
+    padding: 10px 10px;
+}
+
+.card .price{
+    font-size: 32px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.card .price:after{
+    content: " + iva";
+    font-size: 22px;
+}
+
+.card a{
+    display: block;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: transform linear 0.3s;
+}
+
+.card a:hover{
+    transform: translateY(-10px);
+}
+
+.col-red{
+    background-color: crimson;
+}
+
+.col-green{
+    background-color: cadetblue;
+}
+
+.sub{
+    position: relative;
+    height: 100px;
+}
+
+.sub a{
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.prec{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 22px;
+}

@@ -1,0 +1,91 @@
+/* Titolo */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "aside main"
+;
+}
+
+.pageall{
+    display: block;
+}
+
+main{
+    grid-area: main;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main h1{
+    font-family: 'Rubik', sans-serif;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.static-data{
+    display: flex;
+
+}
+
+.money div{
+    font-size: 18px;
+}
+
+.money p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.money p{
+    margin: 5px 0;
+}
+
+.--block{
+    display: inline-block;
+}
+
+.db{
+    margin-top: 3%;
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+.under-db{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.db .row{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row p{
+    width: 25%;
+    text-align: center;
+}
+
+.capital{
+    background-color: grey;
+    color: white;
+}

@@ -1,0 +1,64 @@
+/* Font h2 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Font descrizione */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    margin: 15% 0;
+    justify-content: center;
+}
+
+form{
+    padding: 10px;
+    text-align: center;
+}
+
+form h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+form p{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: grey;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+form input[type=email], input[type=text], input[type=password]{
+    width: 100%;
+    display: block;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form input[type=submit]{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 20px;
+    padding: 10px 40px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.error{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 17px;
+    margin-top: 5px;
+}

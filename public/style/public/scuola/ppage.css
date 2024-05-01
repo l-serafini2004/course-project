@@ -1,0 +1,124 @@
+/*Titolo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Tag */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
+/* CV */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 5fr 4fr;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas:
+            "topp topp"
+            "body info"
+            "bottom bottom"
+}
+
+.above{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 32px;
+    grid-area: topp;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.left{
+    font-size: 21px;
+    margin: 3% 5%;
+    grid-area: body;
+}
+
+.left p{
+    font-family: 'Lato', sans-serif;
+}
+
+.right{
+    grid-area: info;
+}
+
+.bottom{
+    grid-area: bottom;
+}
+
+.right img{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.right ul{
+    width: 60%;
+    margin: auto;
+    list-style-type: none;
+    text-align: left;
+}
+
+.right li{
+    margin: 10px 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+}
+
+.social{
+    color: grey;
+    width: 60%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+}
+
+.social a{
+    color: grey;
+}
+
+.social i{
+    text-align: left;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s linear, color 0.3s linear;
+}
+
+.social i:hover{
+    transform: translateY(-10px);
+}
+
+.fa-linkedin:hover{
+    color: #0077B5;
+}
+
+.fa-facebook:hover{
+    color: #3B5998;
+}
+
+.fa-envelope:hover{
+    color: orange;
+}
+
+.fa-phone:hover{
+    color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    main{
+        grid-template-rows: 0.5fr 2fr 4fr 3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "topp"
+            "info"
+            "body"
+            "bottom"
+    }
+
+}

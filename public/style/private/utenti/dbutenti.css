@@ -1,0 +1,152 @@
+/* Titolo */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "aside main"
+;
+}
+
+.pageall{
+    display: block;
+}
+
+main{
+    grid-area: main;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main h1{
+    font-family: 'Rubik', sans-serif;
+}
+
+form{
+    text-align: center;
+}
+.db{
+    position: relative;
+    overflow-y: scroll;
+    max-height: 80%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% auto;
+    border: 1px solid black;
+}
+
+.--visible{
+    display: block;
+}
+
+.opt{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.opt label{
+   margin: 0 5px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: background-color linear 0.2s;
+}
+
+.row:hover{
+    background-color: rgba(199, 199, 199, 0.7);
+}
+
+.row p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 20%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+form input[type=text]{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 18px;
+    width: 20%;
+    outline: none;
+}
+
+main form input[type=submit]{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.email-del{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Cancella il profilo*/
+.cancella-profilo{
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    width: 20%;
+}
+
+.btn-cnc{
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.cancella-profilo form{
+    padding: 5px 10px;
+}
+
+.cancella-profilo p{
+    text-align: left;
+}
+
+.cancella-profilo form p{
+    margin-bottom: 10px;
+}
+
+
+.del-adv{
+    background-color: grey;
+    padding: 5px 10px;
+    color: white;
+}
+
+
+.cancella-profilo input[type=submit]{
+    display: block;
+    padding: 5px 10px;
+}

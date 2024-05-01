@@ -1,0 +1,380 @@
+/*Titolo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Desc */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Corsi */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+/* Desc corsi */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+/* Desc news */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Tit news */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/*Titolo principale*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+
+.correct-sub{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px 40px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+}
+
+.tit-txt{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.tit-txt:after{
+    content: "";
+    width: 0;
+    height: 5px;
+    display: block;
+    background: blue;
+}
+
+
+main .low {
+    margin: 2% 5%;
+}
+main .low article {
+    display: flex;
+    justify-content: center;
+}
+main .low article div {
+    width: 50%;
+}
+main .low article .wri {
+    position: relative;
+}
+main .low article .wri h2 {
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+main .low article .wri p {
+    font-family: "Almarai", sans-serif;
+    font-size: 20px;
+}
+main .low article .wri a {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 10% 0;
+    background-color: red;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+main .low article .wri a:hover {
+    box-shadow: none;
+    transform: translateY(-10px);
+}
+main .low article .imge {
+    display: block;
+    margin: auto;
+}
+main .low article .imge img {
+    width: 90%;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .low article .lm {
+    margin: 0;
+}
+main .low article .rm {
+    margin: auto;
+}
+
+.circle{
+    display: block;
+    margin: 5% auto;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+@keyframes left-to-right-scroll {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+.tit-txt:hover:after{
+    content: "";
+    animation-name: left-to-right-scroll;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    width: 100%;
+}
+
+
+.first-page{
+    background-color: indianred;
+    height: 100vh;
+}
+
+.titolo{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+    padding: 20px 0;
+    color: white;
+}
+
+.under{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-page .top-img{
+    width: 40%;
+}
+
+.top-img img{
+    width: 80%;
+}
+
+.why{
+    color: white;
+    width: 40%;
+}
+
+.spacer{
+    aspect-ratio: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1 {
+    background-image: url('../../../media/svg/indesvg.svg');
+}
+
+.why p{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.right{
+    margin-left: 50%;
+    text-align: left;
+}
+
+.underline{
+    height: 5px;
+    width: 450px;
+}
+
+/*Corsi consigliati*/
+
+.cons-courses{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    width: 80%;
+    display: block;
+    margin: 2% auto;
+}
+
+.cons-courses h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.corso{
+    width: 30%;
+}
+
+.corso img{
+    width: 100%;
+}
+
+.corso p{
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Newsletter */
+.newsletter{
+    margin: 5% 0;
+    text-align: center;
+}
+
+.newsletter h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.newsletter p{
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 7%;
+    font-size: 19px;
+    color: grey;
+}
+
+.newsletter form{
+    width: 50%;
+    margin: auto;
+}
+
+.--visible{
+    display: none;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+.newsletter input[type=text]{
+    width: 60%;
+    outline: none;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    border-bottom: 1px solid grey;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+}
+
+.newsletter input[type=text]:focus{
+    border-bottom: 1px solid black;
+}
+
+.newsletter input[type=submit]{
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 20px;
+    transition-property: transform,  color, background-color;
+    transition-duration: 1000ms;
+}
+
+.newsletter input[type=submit]:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+}
+
+
+.error{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    display: block;
+}
+
+
+/* Media query */
+@media screen and (max-width: 768px) {
+
+    .why{
+        width: 90% !important;
+        margin: auto !important;
+    }
+
+    body, html{
+        overflow-x: hidden !important;
+    }
+
+    .corso{
+        width: 52%;
+        margin: 20px 0;
+    }
+
+    form{
+        width: 100% !important;
+        margin: 10%;
+    }
+
+
+    .low article{
+        flex-direction: column;
+    }
+
+    article .wri{
+        width: 100% !important;
+    }
+
+    .low article .imge{
+        width: 100% !important;
+    }
+
+    .low article img{
+        width: 100% !important;
+    }
+
+    .first-page{
+        height: 100%;
+    }
+
+    .first-page .top-img{
+        width: 90%;
+    }
+
+    .under img{
+        margin: 20px auto;
+        display: block;
+        width: 100%;
+    }
+
+    .under{
+        height: 100% !important;
+        flex-direction: column !important;
+    }
+
+}
+

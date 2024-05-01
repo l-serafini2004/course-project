@@ -1,0 +1,108 @@
+/*Titolo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Descrizione */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Insegnanti */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* Nome ins */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+/* de */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+.gallery{
+    width: 80%;
+    margin: 3% auto 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.dcp{
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    font-size: 16px;
+    margin: 5px auto;
+    color: black;
+}
+
+.teacher{
+    margin: 5% 0 20px;
+}
+
+.teacher h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.teacher h3{
+    font-family: 'Overpass', sans-serif;
+    color: grey;
+}
+
+.tcs{
+    margin: 2% 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.tc{
+    width: 300px;
+}
+
+.tc a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.tc p{
+    text-align: center;
+    margin: 10px 0 0;
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+}
+.tc img{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+@media screen and(max-width: 768px) {
+    main{
+        width: 100% !important;
+        margin: 1%;
+    }
+    .gallery{
+        width: 100%;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+    }
+}

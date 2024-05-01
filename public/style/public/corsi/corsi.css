@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    margin-bottom: 10px;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+.search{
+    text-align: center;
+}
+
+.search input, .search select{
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.search input[type=submit]{
+    padding: 6px 20px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-course{
+    margin: 5% 0;
+    width: 400px;
+}
+
+.single-course img{
+    width: 100%;
+}
+
+.single-course h2{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.single-course .keep{
+    color: grey;
+    font-family: 'Heebo', sans-serif;
+}
+
+.single-course .desc{
+    margin: 10px 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .courses{
+        padding: 2%;
+        display: block;
+    }
+    main{
+        height: 100%;
+    }
+
+    .search{
+        padding: 2%;
+    }
+
+}

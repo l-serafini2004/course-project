@@ -1,0 +1,135 @@
+/* titolo */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+/* par */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* sign up */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* forgot password */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+/* checkbox */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background: url("../../../media/svg/bglogin.svg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 5px;
+    height: 80%;
+    width: 30%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+article h1{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 38px;
+}
+
+.inp{
+    margin: 5% 0;
+}
+
+.inp p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inp input[type=email], .inp input[type=password], .inp input[type=text], select{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #F5730A;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.inp span{
+    margin-top: 2px;
+    margin-left: 5px;
+    display: inline-block;
+    text-align: right;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.fine{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.fine a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.fine p{
+    font-size: 19px;
+}
+
+.fine .sign{
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.error{
+    color: red;
+    display: block;
+}
+
+input[type=checkbox]{
+
+}
+
+label{
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    article{
+        width: 100%;
+        height: 100%;
+    }
+}

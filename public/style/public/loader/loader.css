@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 750ms, visibility 750ms ;
+}
+
+.ball{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/id/1313144140/vector/united-kingdom-flag-icon-vector-illustration-round.jpg?s=612x612&w=0&k=20&c=h93f2qBvUJHgpW5dk_elW3saCRyUOuNImoWlAMaAF2o=");
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+
+.--loader{
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
