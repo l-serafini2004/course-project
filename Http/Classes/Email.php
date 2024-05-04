@@ -6,9 +6,9 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 
-const PASSWORDAPP = "thug vsts aagx ukel";
-const EMAILFROM = "noreply@lucaserafini.it";
-const EMAILNAME = "Luca Serafini";
+const PASSWORDAPP = "passwordapp";
+const EMAILFROM = "emailform";
+const EMAILNAME = "EmailName";
 
 class Email
 {
