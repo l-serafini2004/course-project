@@ -61,7 +61,7 @@
             <br>
             <input type="checkbox" required>
             <label>Accetta i <a href="#" target="_blank">termini e le condizioni</a></label>
-            <input type="submit" value="Login">
+            <input type="submit" value="Registrati">
         </form>
     </article>
 </main>
